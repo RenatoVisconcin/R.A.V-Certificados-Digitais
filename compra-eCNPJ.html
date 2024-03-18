@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>e-CNPJ</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="style-compra.css">
+</head>
+<body>
+
+<!-- =============Teste============= -->
+<button id="open-cart-btn">
+  <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+</button>
+
+<div class="backdrop"></div>
+
+<div id='sidecart' class="sidecart">
+  <div class="cart-content">
+      <div class="cart-header">
+          <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+          <div class="header-title">
+              <h2>Seu carrinho</h2>
+              <span id="items-cart">0</span>
+          </div>
+          <span id="close_btn" class="close_btn">&times;</span>
+      </div>
+      <div class="cart-items">
+          
+      </div>
+      <div class="cart-actions">
+          <div class="subtotal">
+              <p>SUBTOTAL:</p>
+              <p>R$<span id="subtotal_price">0</span></p>
+          </div>
+          <a onclick="sendCartToWhatsapp()">Encaminhar Pedido</a>
+      </div>
+  </div>
+</div>
+
+<!-- =============Teste============= -->
+
+    <div id="compra">
+        <a href="index.html" class="back-button">&lt; Voltar</a>
+        <div id="esquerda">
+          <div class="container">
+            <img src="img/eCNPJ.png">
+          </div>
+        </div>
+        <div id="direita">
+          <div class="container">
+              <h1>e-CNPJ</h1>
+              <form>
+                <label for="tipo">Tipo:</label>
+                <select id="tipo" name="tipo">
+                  <option value="" selected="">Escolha o tipo</option>
+                  <option value="A1">A1</option>
+                  <option value="A3">A3</option>
+                  <option value="A3C">A3 em cartão</option>
+                  <option value="A3CL">A3 em cartão + leitora ou token</option>
+                </select>
+                <label for="validade">Validade:</label>
+                <select id="validade" name="validade">
+                  <option value="" selected="">Escolha a validade</option>
+                  <option value="1 ano">1 ano</option>
+                  <option value="3 anos" disabled="">3 anos</option>
+                </select>
+                <label for="quantidade">Quantidade:</label>
+                <input id="quantidade" type="number" name="quantidade" placeholder="Digite a quantidade" min="0"> 
+                <div class="preco-container">Por favor, selecione tipo, validade e quantidade.</div>
+                <input type="hidden" id="price_A1_1 ano" value="221.00">
+                <input type="hidden" id="price_A3_1 ano" value="229.00">
+                <input type="hidden" id="price_A3_3 anos" value="325.00">
+                <input type="hidden" id="price_A3C_1 ano" value="279.00">
+                <input type="hidden" id="price_A3C_3 anos" value="379.00">
+                <input type="hidden" id="price_A3CL_1 ano" value="439.00">
+                <input type="hidden" id="price_A3CL_3 anos" value="545.00">
+                <a type="submit" onclick="sendToWhatsapp('e-CNPJ')">Encaminhar Pedido</a>
+                <a type="submit" onclick="addItemCart('ecnpj')">Adicionar ao carrinho</a>
+              </form>
+            </div>
+          </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="btn.js"></script>
+</body>
+</html>

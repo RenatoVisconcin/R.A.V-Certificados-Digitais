@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>R.A.V. Certificados Digitais</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =============Teste============= -->
+    <button id="open-cart-btn">
+        <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+    </button>
+
+    <div class="backdrop"></div>
+
+    <div id='sidecart' class="sidecart">
+        <div class="cart-content">
+            <div class="cart-header">
+                <i class="fa-solid fa-cart-shopping fa-2xl"></i>
+                <div class="header-title">
+                    <h2>Seu carrinho</h2>
+                    <span id="items-cart">0</span>
+                </div>
+                <span id="close_btn" class="close_btn">&times;</span>
+            </div>
+            <div class="cart-items">
+                
+            </div>
+            <div class="cart-actions">
+                <div class="subtotal">
+                    <p>SUBTOTAL:</p>
+                    <p>R$<span id="subtotal_price">0</span></p>
+                </div>
+                <a onclick="sendCartToWhatsapp()">Encaminhar Pedido</a>
+            </div>
+        </div>
+    </div>
+
+<!-- =============Teste============= -->
+    
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="img/logo2.png">
+                <h1>R.A.V. CERTIFICADOS DIGITAIS</h1>
+            </div>
+            <div class="titulo">
+                <div class="titulo-coluna-1">
+                    <p>Obtenha seu certificado digital no conforto de sua casa!</p>
+                </div>
+                <div class="titulo-coluna-2">
+                    <img src="img/cert1.png">
+                </div>
+            </div>
+            <div class="btn">
+                <a href="#comprar">Obtenha já o seu</a> <!-- ARRUMAR -->
+            </div>
+        </div>
+    </header>
+    <!-- =============↓ seu code aqui ↓============= -->
+    <div class="container1">
+        <div class="left">
+            <img src="img/woman.png" alt="Mulher com certificado" id="woman">
+        </div>
+
+        <div class="right">
+            <div class="sobre">
+                <h2>O que é o Certificado Digital?</h2>
+            <p>O certificado digital é o documento de identificação eletrônica de pessoas físicas e jurídicas. A emissão do documento traz agilidade, rapidez e segurança para o seu dia a dia, para ter acesso a diversos serviços junto à Receita Federal ou à Conectividade Social, entre outros.</p>
+            </div>
+        </div>
+    </div>
+
+
+    <div class="container2">
+        <div id="top">
+            <img src="img/Dudereading.gif" alt="Homem lendo" id="gif">
+        </div>
+
+        <div id="bottom">
+            <p>Descubra a maneira mais conveniente e segura de adquirir seus <strong>certificados digitais</strong> conosco! Com nosso método de venda simplificado, você pode escolher os produtos desejados com <strong>facilidade</strong> e <strong>rapidez</strong>, e encaminhar seu pedido diretamente para o <strong>WhatsApp</strong> de um de nossos vendedores <strong>especializados</strong>.
+            </p>
+        </div>
+    </div>
+
+    <div id="comprar">
+    <div class="container3">
+        <div class="productTitle">
+            <h2>Nossos Produtos</h2>
+        </div>
+        
+        <div class="produto1">
+            <img src="img/eCPF.png" alt="e-CPF">
+            <p>e-CPF</p>
+
+            <div class="preco">
+                <p>
+                    A partir de R$155,00
+                </p>
+            </div>
+
+            <div class="btnProduct">
+                <a href="compra-eCPF.html">Comprar</a>
+            </div>
+        </div>
+        
+        <div class="produto2">
+            <img src="img/eCNPJ.png" alt="e-CNPJ">
+            <p>e-CNPJ</p>
+
+            <div class="preco">
+                <p>
+                    A partir de R$221,00
+                </p>
+            </div>
+
+            <div class="btnProduct">
+                <a href="compra-eCNPJ.html">Comprar</a>
+            </div>
+        </div>
+
+        
+        <div class="produto3">
+            <img src="img/NFe.png" alt="NF-e">
+                <p>NF-e</p>
+            
+            <div class="preco">
+                <p>
+                    A partir de R$325,00
+                </p>
+
+            </div>
+
+            <div class="btnProduct">
+                <a href="compra-NFe.html">Comprar</a> 
+            </div>
+            </div>
+        </div>
+    </div>
+    <!-- =============↑ seu code aqui ↑============= -->
+    <footer id="footer">
+        <div class="container">
+            <div class="titulo-footer">
+                <p>Obtenha seu certificado digital no conforto de sua casa!</p>
+            </div>
+            <div class="texto-footer">
+                <p>Endereço</p>
+                <h4>Rua Santa Luzia - 49</h4>
+            </div>
+            <div class="texto-footer">
+                <p>Email</p>
+                <h4>rav.certificados@gmail.com</h4>
+            </div>
+            <div class="texto-footer">
+                <p>Whatsapp</p>
+                <h4>+5511915908957</h4>
+            </div>
+            <div class="texto-footer">
+                <p>&copy; 2024 R.A.V. Certificados Digitais. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="btn.js"></script>
+</body>
+</html>
+
